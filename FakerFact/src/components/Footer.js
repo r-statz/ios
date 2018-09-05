@@ -1,8 +1,8 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-
-const Footer = () => {
-
-}
-
-export default Footer
+// import React from 'react'
+// import { StyleSheet, Text, View } from 'react-native'
+//
+// const Footer = () => {
+//
+// }
+//
+// export default Footer
