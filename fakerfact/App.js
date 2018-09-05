@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import {Platform, StyleSheet, Text, View} from 'react-native'
 import Footer from './Footer'
+import Header from './Header'
+import Body from './Body'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -9,11 +11,15 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 })
 
-type Props = {};
+type Props = {}
+
+
 export default class App extends Component<Props> {
   state = {
+    text: '',
     json: {}
   }
+
   componentDidMount = async() => {
     const response = await fetch('https://api.fakerfact.org/api')
     const json = await response.json()
@@ -25,9 +31,9 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        <Header />
+        <Body state={this.state}/>
         <Text style={styles.welcome}>{JSON.stringify(this.state.json)}</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
         <Footer />
       </View>
     )

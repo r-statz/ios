@@ -1,15 +1,15 @@
 import React, {Component} from 'react'
 import {Text, View} from 'react-native'
 
-const Footer = () => {
+const Header = () => {
 
   return(
-    <View>
+    <View >
       <Text>
-        FOOTER!!!!
+        HEADER!!!!!
       </Text>
     </View>
   )
 }
 
-export default Footer
+export default Header
