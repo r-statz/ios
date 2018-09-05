@@ -20,10 +20,14 @@ export default class App extends Component<Props> {
     json: {}
   }
 
+  checkUrl = () => {
+
+    console.log('hi ty')
+  }
+
   componentDidMount = async() => {
     const response = await fetch('https://api.fakerfact.org/api')
     const json = await response.json()
-    console.log(json, 'json')
     this.setState({json})
 
   }
@@ -32,7 +36,10 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Header />
-        <Body state={this.state}/>
+        <Body
+          state={this.state}
+          checkUrl={this.checkUrl}
+        />
         <Text style={styles.welcome}>{JSON.stringify(this.state.json)}</Text>
         <Footer />
       </View>
