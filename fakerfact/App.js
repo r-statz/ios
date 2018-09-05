@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
-import {Platform, StyleSheet, Text, View} from 'react-native'
+import {Platform, StyleSheet, Text, View, Button, TextInput} from 'react-native'
 import Footer from './Footer'
 import Header from './Header'
-import Body from './Body'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -11,9 +10,7 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 })
 
-type Props = {}
-
-
+// type Props = {}
 export default class App extends Component<Props> {
   state = {
     text: '',
@@ -27,13 +24,27 @@ export default class App extends Component<Props> {
 
   }
 
+  checkUrl = () => {
+    console.log('state', this.state.text)
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <Header />
-        <Body
-          state={this.state}
-        />
+        <View>
+          <TextInput
+            id='id'
+            style={{height: 40, borderColor: 'pink', borderWidth: 1}}
+            onChangeText={(e) => this.setState({text: e})}
+            // value={this.props.state.text}
+          />
+          <Button
+            title='Check'
+            style={{height: 40, borderColor: 'pink', borderWidth: 1}}
+            onPress={() => { this.checkUrl() }}
+          />
+        </View>
         <Text style={styles.welcome}>{JSON.stringify(this.state.json)}</Text>
         <Footer />
       </View>
