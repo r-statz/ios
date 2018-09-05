@@ -1,4 +1,4 @@
-package com.fakerfactios;
+package com.fakerfact;
 
 import android.app.Application;
 
