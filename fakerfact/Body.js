@@ -2,20 +2,38 @@ import React, {Component} from 'react'
 import {Text, View, Button, TextInput} from 'react-native'
 
 
-const Body = (props) => {
+export default class Body extends Component {
+  constructor(props){
+    super(props)
+    state={
+      text: ''
+    }
+  }
 
+  checkUrl = () => {
+
+    console.log('state', this.state)
+  }
+
+  // inputUrl = (e) => {
+  //   this.setState({text: e})
+  //   console.log('this state', this.state)
+  // }
+
+  render(){
     // console.log(this.props.state.text, 'propsstatetext')
     return(
       <View>
         <TextInput
+          id='id'
           style={{height: 40, borderColor: 'pink', borderWidth: 1}}
-          // onChangeText={(text) => setState({text: text})}
-          // value={props.state.text}
+          onChangeText={(e) => this.setState({text: e})}
+          // value={this.props.state.text}
         />
         <Button
           title='Check'
           style={{height: 40, borderColor: 'pink', borderWidth: 1}}
-          onPress={()=> {props.checkUrl()}}
+          onPress={() => { this.checkUrl() }}
         />
 
         <Text>
@@ -25,5 +43,4 @@ const Body = (props) => {
     )
 
 }
-
-export default Body
+}
