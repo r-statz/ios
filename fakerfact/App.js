@@ -15,7 +15,8 @@ export default class App extends Component<Props> {
   state = {
     inputUrl: '',
     apiUrl: '',
-    results: {}
+    results: {},
+    toggle: false
   }
 
   componentDidMount = async() => {
@@ -36,15 +37,21 @@ export default class App extends Component<Props> {
     })
     const json = await response.json()
     this.setState({results: json})
-    console.log(this.state)
-
   }
+
+  toggle = () => {
+    this.state.toggle = !this.state.toggle
+  }
+
 
   checkUrl = (url) => {
     this.postUrl(url)
+    this.toggle()
+    console.log(this.state, "toggle")
   }
 
   render() {
+    console.log(this.state, "render")
     return (
       <View style={styles.container}>
         <Header />
