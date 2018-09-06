@@ -41,9 +41,7 @@ export default class App extends Component<Props> {
   }
 
   checkUrl = (url) => {
-    // console.log(url, 'url')
     this.postUrl(url)
-    // console.log('state', this.state)
   }
 
   render() {
@@ -54,7 +52,6 @@ export default class App extends Component<Props> {
             id='id'
             style={{height: 40, borderColor: 'pink', borderWidth: 1}}
             onChangeText={(e) => this.setState({inputUrl: e})}
-            // value={this.props.state.text}
           />
           <Button
             title='Check'
@@ -62,11 +59,12 @@ export default class App extends Component<Props> {
             onPress={() => { this.checkUrl(this.state.inputUrl) }}
           />
         {/* <Text style={styles.welcome} >{JSON.stringify(this.state.results)}</Text> */}
+        <Text>Checking URL:</Text>
         <Text style={{color: 'blue'}}
           onPress={() => Linking.openURL(this.state.results.url)}>
-        Checking URL:
+          { this.state.results.url }
         </Text>
-        <Text>Walt Says: </Text>
+        <Text>Walt Says: "This is a fucking witch hunt!!!!"</Text>
         <View>
           <Text>
             GRAPH

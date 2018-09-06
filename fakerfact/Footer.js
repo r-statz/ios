@@ -6,7 +6,7 @@ const Footer = () => {
   return(
     <View>
       <Text>
-        FOOTER!!!!
+        FOOTER
       </Text>
     </View>
   )
