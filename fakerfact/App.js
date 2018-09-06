@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Platform, StyleSheet, Text, View, Button, TextInput, Linking} from 'react-native'
 import Footer from './Footer'
 import Header from './Header'
-
+console.ignoredYellowBox = ['Remote debugger'];
 // const instructions = Platform.select({
 //   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
 //   android:
@@ -14,19 +14,19 @@ import Header from './Header'
 export default class App extends Component<Props> {
   state = {
     inputUrl: '',
-    predictions: '',
+    apiUrl: '',
     results: {}
   }
 
   componentDidMount = async() => {
     const response = await fetch('https://api.fakerfact.org/api')
     const json = await response.json()
-    this.setState({predictions: json._links.predictions.href})
+    this.setState({apiUrl: json._links.predictions.href})
   }
 
   async postUrl(url) {
-    console.log(this.state.newsUrl, 'url')
-    const response = await fetch(this.state.predictions, {
+    // console.log(this.state.newsUrl, 'url')
+    const response = await fetch(this.state.apiUrl, {
       method: 'POST',
       body: JSON.stringify({ 'url': url}),
       headers: {
@@ -36,6 +36,7 @@ export default class App extends Component<Props> {
     })
     const json = await response.json()
     this.setState({results: json})
+    console.log(this.state)
 
   }
 
@@ -49,7 +50,6 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Header />
-        <View>
           <TextInput
             id='id'
             style={{height: 40, borderColor: 'pink', borderWidth: 1}}
@@ -61,12 +61,17 @@ export default class App extends Component<Props> {
             style={{height: 40, borderColor: 'pink', borderWidth: 1}}
             onPress={() => { this.checkUrl(this.state.inputUrl) }}
           />
-        </View>
-        <Text style={styles.welcome}>{JSON.stringify(this.state.results)}</Text>
+        {/* <Text style={styles.welcome} >{JSON.stringify(this.state.results)}</Text> */}
         <Text style={{color: 'blue'}}
-      onPress={() => Linking.openURL('https://google.com')}>
-  Google
-</Text>
+          onPress={() => Linking.openURL(this.state.results.url)}>
+        Checking URL:
+        </Text>
+        <Text>Walt Says: </Text>
+        <View>
+          <Text>
+            GRAPH
+          </Text>
+        </View>
         <Footer />
       </View>
     )
