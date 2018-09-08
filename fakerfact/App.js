@@ -82,11 +82,11 @@ export default class App extends Component<Props> {
           { this.state.results.url }
         </Text>
         <Text>{ this.state.results.walt_says}</Text> */}
-        {/* <View>
+        <View>
           <Text>
             { JSON.stringify(this.state.results.predictions) }
           </Text>
-        </View> */}
+        </View>
         <Footer />
       </View>
     )
