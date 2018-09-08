@@ -4,11 +4,11 @@ import {Text, View} from 'react-native'
 const Header = () => {
 
   return(
-    <View >
-      <Text>
-        HEADER!!!!!
-      </Text>
-    </View>
+  <View>
+    <Text>
+      HEader
+    </Text>
+  </View>
   )
 }
 
