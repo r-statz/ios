@@ -45,26 +45,22 @@ export default class App extends Component {
   }
 
   render() {
-    return (
-      <View style={Styles.container}>
-        <Header />
-        <Body />
-          {/* <TextInput
-            id='url'
-            style={{height: 40, borderColor: '#7c8287', borderWidth: 1}}
-            onChangeText={(e) => this.setState({inputUrl: e})}
-          />
-          <Button
-            title='Check'
-            style={Styles.button}
-            onPress={() => { this.checkUrl(this.state.inputUrl) }}
-          />
+
+    let display = this.state.toggle ?
+      <View>
         <Text>Checking URL:</Text>
         <Text style={{color: 'blue'}}
           onPress={() => Linking.openURL(this.state.results.url)}>
           { this.state.results.url }
         </Text>
         <Text>{ this.state.results.walt_says}</Text>
+      </View> : <View></View>
+        
+    return (
+      <View style={Styles.container}>
+        <Header />
+        <Body />
+       
         <View>
           <Text>
             { JSON.stringify(this.state.results.predictions) }
