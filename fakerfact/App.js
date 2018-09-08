@@ -3,6 +3,7 @@ import {Text, View, Button, TextInput, Linking} from 'react-native'
 import Styles from './Styles'
 import Footer from './Footer'
 import Header from './Header'
+import Body from './Body'
 
 console.disableYellowBox = true;
 
@@ -47,15 +48,15 @@ export default class App extends Component {
     return (
       <View style={Styles.container}>
         <Header />
-        <View style={Styles.body}>
-          <TextInput
+        <Body />
+          {/* <TextInput
             id='url'
             style={{height: 40, borderColor: '#7c8287', borderWidth: 1}}
             onChangeText={(e) => this.setState({inputUrl: e})}
           />
           <Button
             title='Check'
-            style={{height: 40, borderColor: 'pink', borderWidth: 1}}
+            style={Styles.button}
             onPress={() => { this.checkUrl(this.state.inputUrl) }}
           />
         <Text>Checking URL:</Text>
@@ -69,7 +70,7 @@ export default class App extends Component {
             { JSON.stringify(this.state.results.predictions) }
           </Text>
         </View>
-      </View>
+      </View> */}
         <Footer />
       </View>
     )

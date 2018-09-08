@@ -18,6 +18,9 @@ const Styles = {
     padding:20
   },
   button : {
+    height: 40,
+    // borderColor: 'pink', 
+    borderWidth: 1,
     backgroundColor: '#3f7fee',
     color: '#7c8287'
   },
