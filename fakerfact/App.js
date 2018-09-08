@@ -35,9 +35,10 @@ export default class App extends Component {
     this.setState({results: json})
   }
 
-  // toggle = () => {
-  //   this.state.toggle = !this.state.toggle
-  // }
+  logoButton = () => {
+    // console.log('logo clicked')
+    this.state.toggle = false
+  }
 
   checkUrl = (url) => {
     this.postUrl(url)
@@ -47,7 +48,10 @@ export default class App extends Component {
   render() {
     return (
       <View style={Styles.container}>
-        <Header />
+        <Header
+          logoButton = {this.logoButton}
+          toggle={this.state.toggle}
+        />
         <Body postUrl={this.postUrl} checkUrl={this.checkUrl}
         walt={ this.state.results.walt_says}
         linkingUrl = {this.state.results.url}

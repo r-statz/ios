@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-import {Text, TextInput, Button, View, Linking} from 'react-native'
+import {Text, TextInput, View, Linking} from 'react-native'
+import Button from 'react-native-button'
 import Styles from './Styles'
 
 export default class Body extends Component {
@@ -7,10 +8,6 @@ export default class Body extends Component {
   state = {
     inputUrl: ''
   }
-  // checkUrl = (url) => {
-  //   this.props.postUrl(url)
-  //   this.toggle()
-  // }
 
   render() {
     // console.log(this.state, "body props")
@@ -33,17 +30,18 @@ export default class Body extends Component {
 
     <View style={Styles.body}>
       <TextInput
-        id='mymom'
-        style={{height: 40, borderColor: 'pink', borderWidth: 1}}
+        id='inputBox'
+        style={Styles.inputBox}
         onChangeText={(e) => this.setState({inputUrl: e})}
       />
       <Button
         title='Check'
-        style={{height: 40, borderColor: 'pink', borderWidth: 1}}
+        style={Styles.button}
         onPress={() => { this.props.checkUrl(this.state.inputUrl) }}
-      />
+        >Check
+      </Button>
       { display }
-  </View>
+      </View>
   )
 }
 }

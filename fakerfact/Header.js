@@ -1,15 +1,21 @@
 import React, {Component} from 'react'
-import {Text, View} from 'react-native'
+import {Text, View, TouchableOpacity, Image} from 'react-native'
 import Styles from './Styles'
 
-const Header = () => {
-
+const Header = (props) => {
+console.log(props, 'props')
   return(
+
       <View style={Styles.header}>
-        <Text>
-          HEADER
-        </Text>
+        <TouchableOpacity
+          onPress={props.logoButton}>
+          <Image source={require('./assets/icon_29pt.png')}/>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={props.logoButton}>
+        <Text>FakerFact</Text>
+        </TouchableOpacity>
       </View>
+
   )
 }
 
