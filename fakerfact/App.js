@@ -35,38 +35,25 @@ export default class App extends Component {
     this.setState({results: json})
   }
 
-  toggle = () => {
-    this.state.toggle = !this.state.toggle
-  }
+  // toggle = () => {
+  //   this.state.toggle = !this.state.toggle
+  // }
 
   checkUrl = (url) => {
     this.postUrl(url)
-    this.toggle()
+    this.state.toggle = true
   }
 
   render() {
-
-    let display = this.state.toggle ?
-      <View>
-        <Text>Checking URL:</Text>
-        <Text style={{color: 'blue'}}
-          onPress={() => Linking.openURL(this.state.results.url)}>
-          { this.state.results.url }
-        </Text>
-        <Text>{ this.state.results.walt_says}</Text>
-      </View> : <View></View>
-        
     return (
       <View style={Styles.container}>
         <Header />
-        <Body />
-       
-        <View>
-          <Text>
-            { JSON.stringify(this.state.results.predictions) }
-          </Text>
-        </View>
-      </View> */}
+        <Body postUrl={this.postUrl} checkUrl={this.checkUrl}
+        walt={ this.state.results.walt_says}
+        linkingUrl = {this.state.results.url}
+        predictions={this.state.results.predictions}
+        toggle={this.state.toggle}
+        />
         <Footer />
       </View>
     )
