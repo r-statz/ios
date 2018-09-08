@@ -1,17 +1,12 @@
 import React, {Component} from 'react'
-import {Platform, StyleSheet, Text, View, Button, TextInput, Linking} from 'react-native'
+import {Text, View, Button, TextInput, Linking} from 'react-native'
+import Styles from './Styles'
 import Footer from './Footer'
 import Header from './Header'
-console.ignoredYellowBox = ['Remote debugger'];
-// const instructions = Platform.select({
-//   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-//   android:
-//     'Double tap R on your keyboard to reload,\n' +
-//     'Shake or press menu button for dev menu',
-// })
 
-// type Props = {}
-export default class App extends Component<Props> {
+console.disableYellowBox = true;
+
+export default class App extends Component {
   state = {
     inputUrl: '',
     apiUrl: '',
@@ -43,26 +38,19 @@ export default class App extends Component<Props> {
     this.state.toggle = !this.state.toggle
   }
 
-
   checkUrl = (url) => {
     this.postUrl(url)
     this.toggle()
-    // console.log(this.state, "toggle")
   }
 
   render() {
-    console.log(this.state, "render")
     return (
-      // <View style={styles.container}>
-      //   <View style={{flex: 1}}>
-      //   <View style={{flex: 1, backgroundColor: 'powderblue'}} />
-      //   <View style={{flex: 2, backgroundColor: 'skyblue'}} />
-      //   <View style={{flex: 3, backgroundColor: 'steelblue'}} />
-      // </View>
+      <View style={Styles.container}>
         <Header />
+        <View style={Styles.body}>
           <TextInput
-            id='id'
-            style={{height: 40, borderColor: 'pink', borderWidth: 1}}
+            id='url'
+            style={{height: 40, borderColor: '#7c8287', borderWidth: 1}}
             onChangeText={(e) => this.setState({inputUrl: e})}
           />
           <Button
@@ -81,27 +69,9 @@ export default class App extends Component<Props> {
             { JSON.stringify(this.state.results.predictions) }
           </Text>
         </View>
+      </View>
         <Footer />
       </View>
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-})

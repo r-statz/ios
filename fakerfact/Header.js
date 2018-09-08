@@ -1,14 +1,15 @@
 import React, {Component} from 'react'
 import {Text, View} from 'react-native'
+import Styles from './Styles'
 
 const Header = () => {
 
   return(
-  <View>
-    <Text>
-      HEader
-    </Text>
-  </View>
+      <View style={Styles.header}>
+        <Text>
+          HEADER
+        </Text>
+      </View>
   )
 }
 
