@@ -9,9 +9,11 @@ console.disableYellowBox = true;
 
 export default class App extends Component {
   state = {
+    inputUrl: '',
     apiUrl: '',
     results: {},
-    toggle: false
+    toggle: false,
+    placeHolder: 'Enter a URL'
   }
 
   componentDidMount = async() => {
@@ -38,23 +40,36 @@ export default class App extends Component {
     this.setState({toggle: false})
   }
 
-  checkUrl = (url) => {
-    this.postUrl(url)
-    this.setState({toggle: true})
+  inputUrl = (e) => {
+    this.setState({inputUrl:  e})
+  }
+
+  checkUrl = (e) => {
+
+    e.preventDefault()
+    this.postUrl(this.state.inputUrl)
+    this.setState({toggle: true,
+                  placeHolder: 'Enter another URL',
+                  inputUrl: ''
+                })
   }
 
   render() {
     return (
       <View style={Styles.container}>
-        <Header
+        <Header 
           logoButton = {this.logoButton}
           toggle={this.state.toggle}
         />
-        <Body postUrl={this.postUrl} checkUrl={this.checkUrl}
-        walt={ this.state.results.walt_says}
-        linkingUrl = {this.state.results.url}
-        predictions={this.state.results.predictions}
-        toggle={this.state.toggle}
+        <Body
+          // style={Styles.body}
+          postUrl={this.postUrl} checkUrl={this.checkUrl}
+          walt={ this.state.results.walt_says}
+          linkingUrl = {this.state.results.url}
+          predictions={this.state.results.predictions}
+          toggle={this.state.toggle}
+          placeHolder={this.state.placeHolder}
+          inputUrl={this.inputUrl}
         />
         <Footer />
       </View>

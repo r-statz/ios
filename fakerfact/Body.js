@@ -5,12 +5,7 @@ import Styles from './Styles'
 
 export default class Body extends Component {
 
-  state = {
-    inputUrl: ''
-  }
-
   render() {
-    // console.log(this.state, "body props")
     let display = this.props.toggle ?
       <View>
         <Text>Checking URL:</Text>
@@ -27,22 +22,26 @@ export default class Body extends Component {
       </View> : <View></View>
 
     return (
-
     <View style={Styles.body}>
       <TextInput
+        ref='peanuts'
         style={Styles.inputBox}
-        placeholder={this.props.toggle ? 'Enter a URL' : 'Enter a URL'}
-        onChangeText={(e) => this.setState({inputUrl: e})}
+        placeholder={this.props.placeHolder}
+        onChangeText={(e) => this.props.inputUrl(e)}
       />
-      <Button
-        title='Check'
-        style={Styles.button}
-        containerStyle={Styles.buttonBox}
-        onPress={() => {  this.props.checkUrl(this.state.inputUrl) }}
-        >Check
-      </Button>
+      <View style={Styles.box}>
+          <Button
+            containerStyle={Styles.buttonBox}
+            title='Check'
+            style={Styles.button}
+            onPress={ (e) =>  {this.props.checkUrl(e)}}
+            >Check
+          </Button>
+        </View>
+
       { display }
-      </View>
+    </View>
+
   )
 }
 }

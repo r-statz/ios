@@ -20,27 +20,32 @@ const Styles = {
   body : {
     flex: 8,
     flexDirection: 'column',
-    padding:20,
+    padding: 15,
   },
-  button : {
-    color: '#ffffff',
+  inputBox : {
+    height: 50,
+    borderColor: '#a7a7a7',
+    borderRadius: 4,
+    borderWidth: 1,
+    margin: 10,
+    color: '#a7a7a7',
+    paddingLeft: 10,
+  },
+  box : {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
   },
   buttonBox: {
     backgroundColor: '#3f7fee',
-    height: 50,
-    width: 200,
+    height: 40,
+    width: 80,
     borderRadius: 4,
     justifyContent: 'center',
     alignItems: 'center'
   },
-  inputBox : {
-    height: 40,
-    borderColor: '#a7a7a7',
-    borderRadius: 4,
-    borderWidth: 1,
-    margin: 20,
-    color: '#a7a7a7',
-    paddingLeft: 10
+  button : {
+    color: '#ffffff',
   },
   footer : {
     flex: .75,
