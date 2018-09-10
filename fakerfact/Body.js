@@ -4,20 +4,16 @@ import Button from 'react-native-button'
 import Styles from './Styles'
 
 export default class Body extends Component {
-<<<<<<< HEAD
     constructor(props){
       super(props)
       state = {
         inputUrl: '',
       }
-=======
-
 constructor(props) {
   super(props)
-
+  
   this.state = {
     inputUrl: ''
->>>>>>> d5abd6e0c9e0a09005980ce9cabaef39b773ef6d
   }
 }
 
