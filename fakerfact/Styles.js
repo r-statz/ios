@@ -48,6 +48,7 @@ const Styles = {
     color: '#ffffff',
   },
   checkingUrl : {
+    marginTop: 40,
     backgroundColor:'#efefef',
     padding: 10,
   },
@@ -56,8 +57,10 @@ const Styles = {
     fontWeight: 'bold',
   },
   waltSays : {
+    marginTop: 10,
     fontWeight: 'bold',
     fontSize: 18,
+    marginBottom: 10,
   },
   footer : {
     flex: .75,
