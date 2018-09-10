@@ -31,8 +31,8 @@ const Styles = {
     color: '#a7a7a7',
     paddingLeft: 10,
   },
-  box : {
-    flex: 1,
+  checkBox : {
+    flex: .1,
     flexDirection: 'row',
     justifyContent: 'center',
   },
@@ -47,6 +47,19 @@ const Styles = {
   button : {
     color: '#ffffff',
   },
+  checkingUrl : {
+    backgroundColor:'#efefef',
+    padding: 10,
+  },
+  checkingUrlText : {
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  waltSays : {
+    fontWeight: 'bold',
+    fontSize: 18,
+  },
+  
   footer : {
     flex: .75,
     flexDirection: 'row',

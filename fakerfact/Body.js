@@ -5,18 +5,43 @@ import Styles from './Styles'
 
 export default class Body extends Component {
 
+constructor(props) {
+  super(props)
+
+  this.state = {
+    inputUrl: ''
+  }
+}
+
+// checkUrl = (url) => {
+//   this.postUrl(url)
+//   this.setState({
+//     toggle: true,
+//     placeHolder: 'Enter another URL'
+//               })
+// }
+// clear = () => {
+//   this.setState({
+//     inputUrl: ''
+//   })
+// }
+
   render() {
     let display = this.props.toggle ?
       <View>
-        <Text>Checking URL:</Text>
-        <Text style={{color: 'blue'}}
-          onPress={() => Linking.openURL(this.props.linkingUrl)}>
+        <View style={Styles.checkingUrl}>
+          <Text style={Styles.checkingUrlText}>Checking URL:</Text>
+          <Text style={{color: 'blue'}}
+            onPress={() => Linking.openURL(this.props.linkingUrl)}>
           { this.props.linkingUrl }
-        </Text>
-        <Text>{ this.props.walt}</Text>
+          </Text>
+          </View>
+        <View >
+          <Text style={Styles.waltSays}>{ this.props.walt}</Text>
+        </View>
         <View>
           <Text>
-            { JSON.stringify(this.props.predictions) }
+            hello
           </Text>
         </View>
       </View> : <View></View>
@@ -24,23 +49,25 @@ export default class Body extends Component {
     return (
     <View style={Styles.body}>
       <TextInput
-        ref='peanuts'
         style={Styles.inputBox}
+        onChangeText={(e) => this.props.inputText(e)}
+        value={this.props.inputUrl}
         placeholder={this.props.placeHolder}
-        onChangeText={(e) => this.props.inputUrl(e)}
+        clearButtonMode='always'
       />
-      <View style={Styles.box}>
+        <View style={Styles.checkBox}>
           <Button
             containerStyle={Styles.buttonBox}
             title='Check'
             style={Styles.button}
-            onPress={ (e) =>  {this.props.checkUrl(e)}}
+            onPress={ this.props.checkUrl }
             >Check
           </Button>
         </View>
-
-      { display }
-    </View>
+        <View>
+          { display }
+        </View>
+        </View>
 
   )
 }

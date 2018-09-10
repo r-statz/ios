@@ -23,7 +23,6 @@ export default class App extends Component {
   }
 
   async postUrl(url) {
-    // console.log(this.state.newsUrl, 'url')
     const response = await fetch(this.state.apiUrl, {
       method: 'POST',
       body: JSON.stringify({ 'url': url}),
@@ -40,13 +39,11 @@ export default class App extends Component {
     this.setState({toggle: false})
   }
 
-  inputUrl = (e) => {
+  inputText = (e) => {
     this.setState({inputUrl:  e})
   }
 
-  checkUrl = (e) => {
-
-    e.preventDefault()
+  checkUrl = () => {
     this.postUrl(this.state.inputUrl)
     this.setState({toggle: true,
                   placeHolder: 'Enter another URL',
@@ -57,7 +54,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={Styles.container}>
-        <Header 
+        <Header
           logoButton = {this.logoButton}
           toggle={this.state.toggle}
         />
@@ -69,7 +66,8 @@ export default class App extends Component {
           predictions={this.state.results.predictions}
           toggle={this.state.toggle}
           placeHolder={this.state.placeHolder}
-          inputUrl={this.inputUrl}
+          inputText={this.inputText}
+          inputUrl={this.state.inputUrl}
         />
         <Footer />
       </View>
