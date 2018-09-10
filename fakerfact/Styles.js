@@ -59,7 +59,6 @@ const Styles = {
     fontWeight: 'bold',
     fontSize: 18,
   },
-  
   footer : {
     flex: .75,
     flexDirection: 'row',
