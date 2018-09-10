@@ -44,8 +44,8 @@ constructor(props) {
           <Text style={Styles.waltSays}>{ this.props.walt}</Text>
         </View>
         <View>
-          <Text>
-            hello
+          <Text style={{fontSize: 32}}>
+            Hello, Jeff. Graph is in the mail...
           </Text>
         </View>
       </View> : <View></View>
