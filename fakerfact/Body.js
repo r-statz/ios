@@ -1,42 +1,48 @@
 import React, {Component} from 'react'
-import {Text, TextInput, Button, View} from 'react-native'
+import {Text, TextInput, View, Linking} from 'react-native'
+import Button from 'react-native-button'
 import Styles from './Styles'
 
 export default class Body extends Component {
-
-  state = {
-    inputUrl: '',
-    apiUrl: '',
-    results: {},
-    toggle: false
+    constructor(props){
+      super(props)
+      state = {
+        inputUrl: '',
+      }
   }
-  
-  render() {
-    return (
 
-    <View style={Styles.body}>
-      <TextInput
-        id='id'
-        // style={{height: 40, borderColor: 'pink', borderWidth: 1}}
-        onChangeText={(e) => this.setState({inputUrl: e})}
-      />
-      <Button
-        title='Check'
-        style={{height: 40, borderColor: 'pink', borderWidth: 1}}
-        onPress={() => { this.checkUrl(this.state.inputUrl) }}
-      />
-    <Text>Checking URL:</Text>
-    <Text style={{color: 'blue'}}
-      onPress={() => Linking.openURL(this.state.results.url)}>
-      { this.state.results.url }
-    </Text>
-    <Text>{ this.state.results.walt_says}</Text>
-    <View>
-      <Text>
-        { JSON.stringify(this.state.results.predictions) }
-      </Text>
-    </View>
-  </View>
-  )
-}
+  render() {
+    let display = this.props.toggle ?
+      <View>
+        <Text>Checking URL:</Text>
+        <Text
+          style={{color: 'blue'}}
+          onPress={() => Linking.openURL(this.props.linkingUrl)}>
+          { this.props.linkingUrl }
+        </Text>
+        <Text>{ this.props.walt }</Text>
+        <View>
+          <Text>
+            { JSON.stringify(this.props.predictions) }
+          </Text>
+        </View>
+      </View> : <View></View>
+
+    return (
+      <View style={Styles.body}>
+        <TextInput
+          id='inputBox'
+          style={Styles.inputBox}
+          onChangeText={(e) => this.setState({inputUrl: e})}
+        />
+        <Button
+          title='Check'
+          style={Styles.button}
+          onPress={() => { this.props.checkUrl(this.state.inputUrl)}}
+          >Check
+        </Button>
+        { display }
+      </View>
+    )
+  }
 }
