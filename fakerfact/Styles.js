@@ -23,41 +23,46 @@ const Styles = {
   body : {
     flex: 8,
     flexDirection: 'column',
-    padding:20,
+    padding: 15,
   },
-  button : {
-<<<<<<< HEAD
-    height: 40,
-    // borderColor: 'pink',
+  inputBox : {
+    height: 50,
+    borderColor: '#a7a7a7',
+    borderRadius: 4,
     borderWidth: 1,
-    backgroundColor: '#3f7fee',
-    color: '#7c8287',
-    padding:20,
+    margin: 10,
+    color: '#a7a7a7',
+    paddingLeft: 10,
   },
-  button : {
-    borderWidth: 2,
-    borderColor: '#3f7fee',
-=======
-    color: '#ffffff',
+  checkBox : {
+    flex: .1,
+    flexDirection: 'row',
+    justifyContent: 'center',
   },
   buttonBox: {
     backgroundColor: '#3f7fee',
->>>>>>> c004773beeb57eedf2638a9416d7c5201f8a0a74
-    height: 50,
-    width: 200,
+    height: 40,
+    width: 80,
     borderRadius: 4,
     justifyContent: 'center',
     alignItems: 'center'
   },
-  inputBox : {
-    height: 40,
-    borderColor: '#a7a7a7',
-    borderRadius: 4,
-    borderWidth: 1,
-    margin: 20,
-    color: '#a7a7a7',
-    paddingLeft: 10
+  button : {
+    color: '#ffffff',
   },
+  checkingUrl : {
+    backgroundColor:'#efefef',
+    padding: 10,
+  },
+  checkingUrlText : {
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  waltSays : {
+    fontWeight: 'bold',
+    fontSize: 18,
+  },
+
   footer : {
     flex: .75,
     flexDirection: 'row',
