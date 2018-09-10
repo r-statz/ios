@@ -9,7 +9,6 @@ console.disableYellowBox = true;
 
 export default class App extends Component {
   state = {
-    inputUrl: '',
     apiUrl: '',
     results: {},
     toggle: false
@@ -36,13 +35,12 @@ export default class App extends Component {
   }
 
   logoButton = () => {
-    // console.log('logo clicked')
-    this.state.toggle = false
+    this.setState({toggle: false})
   }
 
   checkUrl = (url) => {
     this.postUrl(url)
-    this.state.toggle = true
+    this.setState({toggle: true})
   }
 
   render() {

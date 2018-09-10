@@ -3,7 +3,6 @@ import {Text, View, TouchableOpacity, Image} from 'react-native'
 import Styles from './Styles'
 
 const Header = (props) => {
-console.log(props, 'props')
   return(
 
       <View style={Styles.header}>
@@ -12,7 +11,7 @@ console.log(props, 'props')
           <Image source={require('./assets/icon_29pt.png')}/>
         </TouchableOpacity>
         <TouchableOpacity onPress={props.logoButton}>
-        <Text>FakerFact</Text>
+        <Text style={Styles.textLogo}>FakerFact</Text>
         </TouchableOpacity>
       </View>
 
