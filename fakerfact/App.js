@@ -9,7 +9,6 @@ console.disableYellowBox = true;
 
 export default class App extends Component {
   state = {
-    inputUrl: '',
     apiUrl: '',
     results: {},
     toggle: false

@@ -29,19 +29,21 @@ export default class Body extends Component {
       </View> : <View></View>
 
     return (
-      <View style={Styles.body}>
-        <TextInput
-          id='inputBox'
-          style={Styles.inputBox}
-          onChangeText={(e) => this.setState({inputUrl: e})}
-        />
-        <Button
-          title='Check'
-          style={Styles.button}
-          onPress={() => { this.props.checkUrl(this.state.inputUrl)}}
-          >Check
-        </Button>
-        { display }
+
+    <View style={Styles.body}>
+      <TextInput
+        style={Styles.inputBox}
+        placeholder={this.props.toggle ? 'Enter a URL' : 'Enter a URL'}
+        onChangeText={(e) => this.setState({inputUrl: e})}
+      />
+      <Button
+        title='Check'
+        style={Styles.button}
+        containerStyle={Styles.buttonBox}
+        onPress={() => {  this.props.checkUrl(this.state.inputUrl) }}
+        >Check
+      </Button>
+      { display }
       </View>
     )
   }

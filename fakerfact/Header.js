@@ -10,7 +10,7 @@ const Header = (props) => {
           <Image source={require('./assets/icon_29pt.png')}/>
         </TouchableOpacity>
         <TouchableOpacity onPress={props.logoButton}>
-        <Text>FakerFact</Text>
+        <Text style={Styles.textLogo}>FakerFact</Text>
         </TouchableOpacity>
       </View>
   )
