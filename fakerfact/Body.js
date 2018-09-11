@@ -7,7 +7,7 @@ import Graphs from './Graphs'
 export default class Body extends Component {
 
   render() {
-    const { predicitons, linkingUrl, walt } = this.props
+    const { predictions, linkingUrl, walt } = this.props
 
     let display = this.props.toggle ?
       <View>
