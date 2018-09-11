@@ -4,31 +4,6 @@ import Button from 'react-native-button'
 import Styles from './Styles'
 
 export default class Body extends Component {
-    constructor(props){
-      super(props)
-      state = {
-        inputUrl: '',
-      }
-constructor(props) {
-  super(props)
-  
-  this.state = {
-    inputUrl: ''
-  }
-}
-
-// checkUrl = (url) => {
-//   this.postUrl(url)
-//   this.setState({
-//     toggle: true,
-//     placeHolder: 'Enter another URL'
-//               })
-// }
-// clear = () => {
-//   this.setState({
-//     inputUrl: ''
-//   })
-// }
 
   render() {
     let display = this.props.toggle ?
