@@ -2,48 +2,28 @@ import React, {Component} from 'react'
 import {Text, TextInput, View, Linking} from 'react-native'
 import Button from 'react-native-button'
 import Styles from './Styles'
+import Graphs from './Graphs'
 
 export default class Body extends Component {
 
-constructor(props) {
-  super(props)
-
-  this.state = {
-    inputUrl: ''
-  }
-}
-
-// checkUrl = (url) => {
-//   this.postUrl(url)
-//   this.setState({
-//     toggle: true,
-//     placeHolder: 'Enter another URL'
-//               })
-// }
-// clear = () => {
-//   this.setState({
-//     inputUrl: ''
-//   })
-// }
-
   render() {
+    const { predicitons, linkingUrl, walt } = this.props
+
     let display = this.props.toggle ?
       <View>
         <View style={Styles.checkingUrl}>
           <Text style={Styles.checkingUrlText}>Checking URL:</Text>
           <Text style={{color: 'blue'}}
-            onPress={() => Linking.openURL(this.props.linkingUrl)}>
-          { this.props.linkingUrl }
+            onPress={() => Linking.openURL(linkingUrl)}>
+          { linkingUrl }
           </Text>
           </View>
         <View >
-          <Text style={Styles.waltSays}>{ this.props.walt}</Text>
+          <Text style={Styles.waltSays}>{ walt}</Text>
         </View>
         <View>
-          <Text style={{fontSize: 32}}>
-            Hello, Jeff. Graph is in the mail...
-          </Text>
-        </View>
+          { predictions ? <Graphs predictions={ predictions } /> : null }
+          </View>
       </View> : <View></View>
 
     return (
