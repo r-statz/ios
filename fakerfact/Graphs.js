@@ -20,7 +20,8 @@ const Graphs = ({predictions}) => {
 
 
   return (
-    <View>
+    <View style={Styles.body}>
+      <View style={Styles.graphBox}>
       <View style={{flex: 1, flexDirection: 'column'}}>
         <View style={{flex: 1, flexDirection: 'row', alignItems: 'stretch'}}>
 
@@ -35,7 +36,7 @@ const Graphs = ({predictions}) => {
       </View>
 
     </View>
-    <View style={{flex: 2, flexDirection: 'column', backgroundColor: 'skyblue'}}>
+    <View style={{flex: 1, flexDirection: 'column'}}>
 
       <View style={{flex: 1, flexDirection: 'row', alignItems: 'stretch'}}>
 
@@ -43,15 +44,15 @@ const Graphs = ({predictions}) => {
           <Text>NAME</Text>
         </View>
 
-        <View style={{width: 25, height: 25, backgroundColor: 'skyblue'}} />
+        <View style={{flex: 1, height: 25, backgroundColor: 'pink'}} />
 
-        <View style={{width: 25, height: 25, backgroundColor: 'steelblue'}} />
+        <View style={{width: 25, height: 25, backgroundColor: 'red'}} />
 
       </View>
+    </View>
 
     </View>
 </View>
-
 
   )
 }

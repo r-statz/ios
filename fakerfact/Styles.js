@@ -44,6 +44,12 @@ const Styles = {
     justifyContent: 'center',
     alignItems: 'center'
   },
+  graphBox : {
+    height: 50,
+    width: 300,
+    backgroundColor: 'orange',
+    margin: 0,
+  },
   button : {
     color: '#ffffff',
   },

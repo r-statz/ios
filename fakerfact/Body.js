@@ -47,7 +47,7 @@ export default class Body extends Component {
         <View>
           { display }
         </View>
-        </View>
+      </View>
 
   )
 }
