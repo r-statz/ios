@@ -1,23 +1,24 @@
 import React, {Component} from 'react'
 import {Text, View} from 'react-native'
-// import Styles from './Styles'
-// import Graph from './Graph'
+import Styles from './Styles'
+import Graph from './Graph'
 
-export default class Graphs extends Component {
-
-  constructor(props) {
-    super(props)
-    console.log(props, 'some words')
-  }
+const Graphs = ({predictions}) => {
 
 
+  return (
+      <View>
+        { predictions.map((x, i) =>
+            <Graph
+            key={i}
+            x={x}
+            name={x.name}
+            value={x.value}
+            color={x.color}
+          />
+        )}
 
-render() {
-
-  return(
-    <View>
-
-    </View>
-  )
+      </View>
+    )
 }
-}
+export default Graphs
