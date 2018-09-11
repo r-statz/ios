@@ -1,24 +1,60 @@
 import React, {Component} from 'react'
-import {Text, View} from 'react-native'
+import {AppRegistry, Text, View} from 'react-native'
 import Styles from './Styles'
-import Graph from './Graph'
+// import Graph from './Graph'
 
 const Graphs = ({predictions}) => {
 
+// let bars = predictions.map((x, i) =>
+//   <View style={{flex: 1, flexDirection: 'row', alignItems: 'stretch'}}>
+//
+//     <View style={{flex: 1, height: 25, alignItems: 'flex-end'}}>
+//       <Text>{x.name}</Text>
+//     </View>
+//     <View style={{flex: 1, height: 25, backgroundColor: x.color}}/>
+//     <View style={{flex: 1, height: 25, backgroundColor: 'steelblue'}}/>
+//   </View>
+// )
+
+
+
 
   return (
-      <View>
-        { predictions.map((x, i) =>
-            <Graph
-            key={i}
-            x={x}
-            name={x.name}
-            value={x.value}
-            color={x.color}
-          />
-        )}
+    <View>
+      <View style={{flex: 1, flexDirection: 'column'}}>
+        <View style={{flex: 1, flexDirection: 'row', alignItems: 'stretch'}}>
+
+        <View style={{width: 25, height: 25, alignItems: 'flex-end'}}>
+          <Text>NAME</Text>
+        </View>
+
+        <View style={{width: 25, height: 25, backgroundColor: 'skyblue'}} />
+
+        <View style={{width: 25, height: 25, backgroundColor: 'steelblue'}} />
 
       </View>
-    )
+
+    </View>
+    <View style={{flex: 2, flexDirection: 'column', backgroundColor: 'skyblue'}}>
+
+      <View style={{flex: 1, flexDirection: 'row', alignItems: 'stretch'}}>
+
+        <View style={{width: 25, height: 25, alignItems: 'flex-end'}}>
+          <Text>NAME</Text>
+        </View>
+
+        <View style={{width: 25, height: 25, backgroundColor: 'skyblue'}} />
+
+        <View style={{width: 25, height: 25, backgroundColor: 'steelblue'}} />
+
+      </View>
+
+    </View>
+</View>
+
+
+  )
 }
+
 export default Graphs
+AppRegistry.registerComponent('FakerFact', () => FlexDirectionBasics)
