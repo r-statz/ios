@@ -4,7 +4,7 @@ const Styles = {
     flexDirection: 'column'
   },
   header : {
-    flex: 1.08,
+    flex: 1,
     flexDirection: 'row',
     backgroundColor: '#2a477c',
     alignItems: 'center',
@@ -16,6 +16,9 @@ const Styles = {
     color: '#fff',
     fontWeight: 'bold',
     paddingLeft: 4,
+  },
+  bodyBox : {
+    
   },
   body : {
     flex: 8,
@@ -35,6 +38,7 @@ const Styles = {
     flex: .1,
     flexDirection: 'row',
     justifyContent: 'center',
+    marginBottom: 50
   },
   buttonBox: {
     backgroundColor: '#3f7fee',
@@ -66,7 +70,7 @@ const Styles = {
     color: '#ffffff',
   },
   checkingUrl : {
-    marginTop: 40,
+    // marginTop: 20,
     backgroundColor:'#efefef',
     paddingTop: 10,
     paddingBottom: 10

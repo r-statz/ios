@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Text, TextInput, View, Linking} from 'react-native'
+import {Text, TextInput, View, Linking, ScrollView} from 'react-native'
 import Button from 'react-native-button'
 import Styles from './Styles'
 import Graphs from './Graphs'
@@ -9,6 +9,7 @@ export default class Body extends Component {
   render() {
     const { predictions, linkingUrl, walt } = this.props
 
+    console.log(this.props.toggle);
     let display = this.props.toggle ?
       <View>
         <View style={Styles.checkingUrl}>
@@ -26,27 +27,30 @@ export default class Body extends Component {
           </View>
       </View> : <View></View>
 
-    return (
+  return (
+
     <View style={Styles.body}>
-      <TextInput
-        style={Styles.inputBox}
-        onChangeText={(e) => this.props.inputText(e)}
-        value={this.props.inputUrl}
-        placeholder={this.props.placeHolder}
-        clearButtonMode='always'
-      />
-        <View style={Styles.checkBox}>
-          <Button
-            containerStyle={Styles.buttonBox}
-            title='Check'
-            style={Styles.button}
-            onPress={ this.props.checkUrl }
-            >Check
-          </Button>
-        </View>
-        <View>
-          { display }
-        </View>
+      <ScrollView>
+        <TextInput
+          style={Styles.inputBox}
+          onChangeText={(e) => this.props.inputText(e)}
+          value={this.props.inputUrl}
+          placeholder={this.props.placeHolder}
+          clearButtonMode='always'
+        />
+          <View style={Styles.checkBox}>
+            <Button
+              containerStyle={Styles.buttonBox}
+              title='Check'
+              style={Styles.button}
+              onPress={ this.props.checkUrl }
+              >Check
+            </Button>
+          </View>
+          <View>
+            { display }
+          </View>
+        </ScrollView>
       </View>
 
   )

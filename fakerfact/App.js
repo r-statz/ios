@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Text, View, Button, TextInput, Linking} from 'react-native'
+import {Text, View, Button, TextInput, Linking, ScrollView} from 'react-native'
 import Styles from './Styles'
 import Footer from './Footer'
 import Header from './Header'
@@ -49,15 +49,18 @@ export default class App extends Component {
                   placeHolder: 'Enter another URL',
                   inputUrl: ''
                 })
+                console.log('is clicked')
   }
 
   render() {
     return (
+
       <View style={Styles.container}>
         <Header
           logoButton = {this.logoButton}
           toggle={this.state.toggle}
         />
+
         <Body
           // style={Styles.body}
           postUrl={this.postUrl} checkUrl={this.checkUrl}
@@ -68,9 +71,12 @@ export default class App extends Component {
           placeHolder={this.state.placeHolder}
           inputText={this.inputText}
           inputUrl={this.state.inputUrl}
+          logoButton={this.logoButton}
         />
+
         <Footer />
       </View>
+
     )
   }
 }
