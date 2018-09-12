@@ -38,23 +38,6 @@ let bars = noHate.map((x, i) =>
     <View>
         { bars }
     </View>
-  //     <View style={Styles.graphBox}>
-  //     <View style={{flex: 1, flexDirection: 'column'}}>
-  //       <View style={{flex: 1, flexDirection: 'row', alignItems: 'stretch'}}>
-  //
-  //       <View style={{width: 25, height: 25, alignItems: 'flex-end'}}>
-  //         <Text>NAME</Text>
-  //       </View>
-  //
-  //       <View style={{width: 25, height: 25, backgroundColor: 'skyblue'}} />
-  //
-  //       <View style={{width: 25, height: 25, backgroundColor: 'steelblue'}} />
-  //
-  //     </View>
-  //
-  //   </View>
-  // </View>
-
   )
 }
 

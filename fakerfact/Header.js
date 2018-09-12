@@ -3,6 +3,7 @@ import {Text, View, TouchableOpacity, Image} from 'react-native'
 import Styles from './Styles'
 
 const Header = (props) => {
+  props.state.errors ? console.log(props.state.errors[0].message, "JSON") : null
   return(
       <View style={Styles.header}>
         <TouchableOpacity

@@ -24,7 +24,6 @@ export default class App extends Component {
   }
 
   async postUrl(url) {
-    try {
     const response = await fetch(this.state.apiUrl, {
       method: 'POST',
       body: JSON.stringify({'url': url}),
@@ -35,9 +34,6 @@ export default class App extends Component {
     })
     const json = await response.json()
     this.setState({results: json})
-  } catch(err) {
-    console.log(err, "yo mammy")
-  }
 }
 
   logoButton = () => {
@@ -45,7 +41,6 @@ export default class App extends Component {
   }
 
   inputText = (e) => {
-    console.log(e, 'e')
     this.setState({inputUrl:  e})
   }
 
@@ -57,13 +52,14 @@ export default class App extends Component {
                 })
   }
 
+
   render() {
-    console.log(this.state.results.predictions)
-    // console.log(this.state.inputURl, 'inputUrl')
+
     return (
 
       <View style={Styles.container}>
         <Header
+          state = {this.state.results}
           logoButton = {this.logoButton}
           toggle={this.state.toggle}
         />
@@ -77,6 +73,7 @@ export default class App extends Component {
           placeHolder={this.state.placeHolder}
           inputText={this.inputText}
           inputUrl={this.state.inputUrl}
+          state = {this.state.results}
           // logoButton={this.logoButton}
         />
         <Footer />
