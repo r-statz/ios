@@ -23,7 +23,7 @@ const Styles = {
     padding: 15,
   },
   inputBox : {
-    height: 50,
+    height: 40,
     borderColor: '#a7a7a7',
     borderRadius: 4,
     borderWidth: 1,
@@ -45,10 +45,22 @@ const Styles = {
     alignItems: 'center'
   },
   graphBox : {
-    height: 50,
-    width: 300,
-    backgroundColor: 'orange',
-    margin: 0,
+    height: 30,
+    width: 345,
+    // backgroundColor: 'orange',
+  },
+  barBox : {
+    height: 25,
+    width: 345,
+    backgroundColor: 'white',
+    marginTop: 5,
+    marginBottom: 5,
+  },
+  barText: {
+    paddingRight: 10,
+    fontSize: 12,
+    paddingTop: 3,
+    fontWeight: 'bold'
   },
   button : {
     color: '#ffffff',
@@ -56,17 +68,21 @@ const Styles = {
   checkingUrl : {
     marginTop: 40,
     backgroundColor:'#efefef',
-    padding: 10,
+    paddingTop: 10,
+    paddingBottom: 10
   },
   checkingUrlText : {
     fontSize: 18,
     fontWeight: 'bold',
+    marginLeft: 5,
+    marginRight: 5
   },
   waltSays : {
-    marginTop: 10,
+    marginTop: 15,
     fontWeight: 'bold',
-    fontSize: 18,
-    marginBottom: 10,
+    fontSize: 14,
+    marginBottom: 20,
+    marginRight: 10
   },
   footer : {
     flex: .75,
