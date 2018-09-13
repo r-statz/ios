@@ -4,11 +4,13 @@ import Button from 'react-native-button'
 import Styles from './Styles'
 import Graph from './Graph'
 import Error from './Error'
+import Spinner from './Spinner'
 
 export default class Body extends Component {
 
   render() {
-    const { predictions, linkingUrl, walt, state } = this.props
+    console.log(this.props.spinner, 'spinner?')
+    const { predictions, linkingUrl, walt, state, spinner } = this.props
 
     let display
     if (this.props.toggle){
@@ -57,11 +59,10 @@ export default class Body extends Component {
             </Button>
           </View>
           <View>
-            { display }
+            {spinner ? <Spinner /> : display }
           </View>
         </ScrollView>
       </View>
-
   )
 }
 }

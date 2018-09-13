@@ -3,6 +3,13 @@ const Styles = {
     flex: 1,
     flexDirection: 'column'
   },
+  horizontal: {
+    flex: 1,
+    justifyContent: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    padding: 10
+  },
   header : {
     flex: 1,
     flexDirection: 'row',
@@ -18,7 +25,8 @@ const Styles = {
     paddingLeft: 4
   },
   // bodyBox : {
-  //
+  //   flex: 8,
+  //   flexDirection: 'row',
   // },
   body : {
     flex: 9,
@@ -69,7 +77,6 @@ const Styles = {
     color: '#ffffff'
   },
   checkingUrl : {
-    // marginTop: 20,
     backgroundColor:'#efefef',
     paddingTop: 10,
     paddingBottom: 10
@@ -97,8 +104,7 @@ const Styles = {
   },
   footerText: {
     color: '#a7a7a7',
-    fontSize: 11,
-    fontFamily: 'Arial'
+    fontSize: 11
   }
 }
 

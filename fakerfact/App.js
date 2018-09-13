@@ -14,7 +14,8 @@ export default class App extends Component {
     apiUrl: '',
     results: {},
     toggle: false,
-    placeHolder: 'Enter a URL'
+    placeHolder: 'Enter a URL',
+    spinner: false
   }
 
   componentDidMount = async () => {
@@ -33,7 +34,9 @@ export default class App extends Component {
       }
     })
     const json = await response.json()
-    this.setState({results: json})
+    this.setState({results: json,
+                  spinner: false
+    })
 }
 
   logoButton = () => {
@@ -48,7 +51,8 @@ export default class App extends Component {
     this.postUrl(this.state.inputUrl)
     this.setState({toggle: true,
                   placeHolder: 'Enter another URL',
-                  inputUrl: ''
+                  inputUrl: '',
+                  spinner: true
                 })
   }
 
@@ -74,7 +78,7 @@ export default class App extends Component {
           inputText={this.inputText}
           inputUrl={this.state.inputUrl}
           state = {this.state.results}
-          // logoButton={this.logoButton}
+          spinner={this.state.spinner}
         />
         <Footer />
       </View>

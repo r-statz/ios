@@ -4,7 +4,7 @@ import Styles from './Styles'
 
 
 const Error = (props) => {
-console.log(props.error.url, "PROOPS")
+
 
   return (
     <View>

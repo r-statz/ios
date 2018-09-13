@@ -2,11 +2,10 @@ import React, {Component} from 'react'
 import {AppRegistry, Text, View} from 'react-native'
 import Styles from './Styles'
 import Color from 'color'
-// import Graph from './Graph'
 
 const Graph = ({predictions}) => {
 
-let colorArray = predictions.map(x => Color(x.color).fade(0.8).rgb().string())
+let colorArray = predictions.map(x => Color(x.color).fade(0.85).rgb().string())
 
 let noHate = predictions.slice(0, predictions.length-1)
 
@@ -42,4 +41,3 @@ let bars = noHate.map((x, i) =>
 }
 
 export default Graph
-AppRegistry.registerComponent('FakerFact', () => FlexDirectionBasics)
