@@ -94,6 +94,40 @@ const Styles = {
     marginBottom: 20,
     marginRight: 10
   },
+  errorBox : {
+    flex: 10,
+    flexDirection: 'column',
+    margin: 20
+  },
+  // errorOhno : {
+  //   flex: 1,
+  //   fontSize: 18,
+  //   fontWeight: '600',
+  //   marginBottom: 10
+  // },
+  // errorWalt : {
+  //   marginBottom: 10
+  // },
+  // errorUrl : {
+  //   color: 'blue',
+  //   marginBottom: 10
+  // },
+  // errorPinkBox : {
+  //   flex: 10,
+  //   flexDirection: 'column',
+  //   backgroundColor: 'pink',
+  //   borderRadius: 4,
+  //   height: 40,
+  //   paddingTop: 10,
+  //   paddingLeft:10
+  //
+  // },
+  // errorMessage : {
+  //   flex: 1,
+  //   flexDirection: 'row',
+  //   alignItems: 'center'
+  //
+  // },
   footer : {
     flex: .75,
     flexDirection: 'row',

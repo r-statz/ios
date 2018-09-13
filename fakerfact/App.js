@@ -4,6 +4,7 @@ import Styles from './Styles'
 import Footer from './Footer'
 import Header from './Header'
 import Body from './Body'
+import Error from './Error'
 
 
 console.disableYellowBox = true;
@@ -67,6 +68,12 @@ export default class App extends Component {
           logoButton = {this.logoButton}
           toggle={this.state.toggle}
         />
+
+        {this.state.results.errors ?
+          <View style={Styles.errorBox}>
+            <Error  error={this.state.results}/>
+        </View>
+           :
         <Body
           postUrl={this.postUrl}
           checkUrl={this.checkUrl}
@@ -77,9 +84,9 @@ export default class App extends Component {
           placeHolder={this.state.placeHolder}
           inputText={this.inputText}
           inputUrl={this.state.inputUrl}
-          state = {this.state.results}
           spinner={this.state.spinner}
         />
+        }
         <Footer />
       </View>
     )

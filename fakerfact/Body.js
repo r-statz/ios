@@ -3,21 +3,14 @@ import {Text, TextInput, View, Linking, ScrollView} from 'react-native'
 import Button from 'react-native-button'
 import Styles from './Styles'
 import Graph from './Graph'
-import Error from './Error'
 import Spinner from './Spinner'
 
 export default class Body extends Component {
 
   render() {
-    console.log(this.props.spinner, 'spinner?')
-    const { predictions, linkingUrl, walt, state, spinner } = this.props
+    const { predictions, linkingUrl, walt, spinner } = this.props
 
-    let display
-    if (this.props.toggle){
-        if (state.errors) {
-          display = <Error error={ state }/>
-        } else {
-        display =
+    let display = this.props.toggle ?
           <View>
             <View style={ Styles.checkingUrl }>
               <Text style={ Styles.checkingUrlText }>Checking URL:</Text>
@@ -32,11 +25,8 @@ export default class Body extends Component {
             <View>
               { predictions ? <Graph predictions={ predictions } /> : null  }
               </View>
-          </View>
-         }
-       } else {
-         display = <View></View>
-         }
+          </View> :
+         <View></View>
 
   return (
 
