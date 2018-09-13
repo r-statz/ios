@@ -4,7 +4,7 @@ import Styles from './Styles'
 import Color from 'color'
 // import Graph from './Graph'
 
-const Graphs = ({predictions}) => {
+const Graph = ({predictions}) => {
 
 let colorArray = predictions.map(x => Color(x.color).fade(0.8).rgb().string())
 
@@ -41,5 +41,5 @@ let bars = noHate.map((x, i) =>
   )
 }
 
-export default Graphs
+export default Graph
 AppRegistry.registerComponent('FakerFact', () => FlexDirectionBasics)

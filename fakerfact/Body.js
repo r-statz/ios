@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Text, TextInput, View, Linking, ScrollView} from 'react-native'
 import Button from 'react-native-button'
 import Styles from './Styles'
-import Graphs from './Graphs'
+import Graph from './Graph'
 import Error from './Error'
 
 export default class Body extends Component {
@@ -28,7 +28,7 @@ export default class Body extends Component {
               <Text style={ Styles.waltSays }>{ walt }</Text>
             </View>
             <View>
-              { predictions ? <Graphs predictions={ predictions } /> : null  }
+              { predictions ? <Graph predictions={ predictions } /> : null  }
               </View>
           </View>
          }

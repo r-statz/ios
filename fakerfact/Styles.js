@@ -1,32 +1,29 @@
 const Styles = {
   container : {
     flex: 1,
-    flexDirection: 'column',
+    flexDirection: 'column'
   },
   header : {
     flex: 1,
     flexDirection: 'row',
     backgroundColor: '#2a477c',
     alignItems: 'center',
-    justifyContent: 'flex-end',
-    paddingRight: 25,
-    paddingTop: 25,
     justifyContent: 'flex-start',
-    paddingLeft: 20,
+    paddingLeft: 20
   },
   textLogo: {
     fontSize: 18,
     color: '#fff',
     fontWeight: 'bold',
-    paddingLeft: 4,
+    paddingLeft: 4
   },
-  bodyBox : {
-    
-  },
+  // bodyBox : {
+  //
+  // },
   body : {
-    flex: 8,
+    flex: 9,
     flexDirection: 'column',
-    padding: 15,
+    padding: 15
   },
   inputBox : {
     height: 40,
@@ -35,7 +32,7 @@ const Styles = {
     borderWidth: 1,
     margin: 10,
     color: '#a7a7a7',
-    paddingLeft: 10,
+    paddingLeft: 10
   },
   checkBox : {
     flex: .1,
@@ -53,15 +50,14 @@ const Styles = {
   },
   graphBox : {
     height: 30,
-    width: 345,
-    // backgroundColor: 'orange',
+    width: 345
   },
   barBox : {
     height: 25,
     width: 345,
     backgroundColor: 'white',
     marginTop: 5,
-    marginBottom: 5,
+    marginBottom: 5
   },
   barText: {
     paddingRight: 10,
@@ -70,7 +66,7 @@ const Styles = {
     fontWeight: 'bold'
   },
   button : {
-    color: '#ffffff',
+    color: '#ffffff'
   },
   checkingUrl : {
     // marginTop: 20,
@@ -95,9 +91,6 @@ const Styles = {
     flex: .75,
     flexDirection: 'row',
     alignItems: 'center',
-    // justifyContent: 'flex-end',
-    paddingRight: 25,
-    paddingTop: 25,
     justifyContent: 'flex-start',
     paddingLeft: 20,
     backgroundColor: '#efefef'
