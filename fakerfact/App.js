@@ -5,6 +5,7 @@ import Footer from './Footer'
 import Header from './Header'
 import Body from './Body'
 import Error from './Error'
+import Spinner from './Spinner'
 
 
 console.disableYellowBox = true;
@@ -59,6 +60,29 @@ export default class App extends Component {
 
 
   render() {
+    let pageView
+    if(this.state.spinner) {
+     pageView = <Spinner />
+   } else {
+     pageView = this.state.results.errors && this.state.toggle ?
+      <View style={Styles.errorBox}>
+        <Error  error={this.state.results}/>
+    </View>
+       :
+    <Body
+      postUrl={this.postUrl}
+      checkUrl={this.checkUrl}
+      walt={ this.state.results.walt_says}
+      linkingUrl = {this.state.results.url}
+      predictions={this.state.results.predictions}
+      toggle={this.state.toggle}
+      placeHolder={this.state.placeHolder}
+      inputText={this.inputText}
+      inputUrl={this.state.inputUrl}
+      spinner={this.state.spinner}
+    />
+    }
+
 
     return (
 
@@ -69,24 +93,8 @@ export default class App extends Component {
           toggle={this.state.toggle}
         />
 
-        {this.state.results.errors ?
-          <View style={Styles.errorBox}>
-            <Error  error={this.state.results}/>
-        </View>
-           :
-        <Body
-          postUrl={this.postUrl}
-          checkUrl={this.checkUrl}
-          walt={ this.state.results.walt_says}
-          linkingUrl = {this.state.results.url}
-          predictions={this.state.results.predictions}
-          toggle={this.state.toggle}
-          placeHolder={this.state.placeHolder}
-          inputText={this.inputText}
-          inputUrl={this.state.inputUrl}
-          spinner={this.state.spinner}
-        />
-        }
+        {pageView}
+
         <Footer />
       </View>
     )

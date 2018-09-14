@@ -4,9 +4,12 @@ import Styles from './Styles'
 
 const Spinner = () => {
   return(
-    <View style={Styles.horizontal}>
+    <View style={Styles.body}>
+      <View style={Styles.horizontal}>
         <ActivityIndicator size="large" color="#0000ff" />
+      </View>
     </View>
+
   )
 }
 
