@@ -4,6 +4,7 @@ import Styles from './Styles'
 
 
 const Error = (props) => {
+  
 
   return (
       <View style={Styles.errorBox}>

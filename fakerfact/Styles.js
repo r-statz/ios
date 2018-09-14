@@ -1,3 +1,8 @@
+import Color from 'color'
+
+const bgColor = Color('pink').fade(0.6);
+bgColor.rgb().string()
+
 const Styles = {
   container : {
     flex: 1,
@@ -55,7 +60,7 @@ const Styles = {
   graphBox : {
     height: 30,
     // width: 345
-    
+
   },
   barBox : {
     height: 25,
@@ -110,7 +115,7 @@ const Styles = {
     marginBottom: 10
   },
   errorPinkBox : {
-    backgroundColor: 'pink',
+    backgroundColor: bgColor,
     borderRadius: 4,
     height: 40,
     JustifyContent: 'center',
