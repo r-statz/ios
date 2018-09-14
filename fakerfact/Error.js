@@ -4,22 +4,21 @@ import Styles from './Styles'
 
 
 const Error = (props) => {
-  console.log(props, 'props error')
 
   return (
-      <View>
-        <Text >
+      <View style={Styles.errorBox}>
+        <Text style={Styles.errorOhno}>
           Oh no!
         </Text>
-        <Text >
+        <Text style={Styles.errorWalt}>
           Something has gone wrong and Walt can't make a prediction about this url.
         </Text>
-        <Text
+        <Text style={Styles.errorUrl}
           onPress={() => Linking.openURL(props.error.url)}>
           { props.error.url }
         </Text>
-      <View >
-        <Text >
+      <View style={Styles.errorPinkBox}>
+        <Text style={Styles.errorMessage}>
           { props.error.errors[0].message }
         </Text>
       </View>

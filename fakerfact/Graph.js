@@ -11,8 +11,6 @@ let noHate = predictions.slice(0, predictions.length-1)
 
 let bars = noHate.map((x, i) =>
 <View key={i} style={Styles.graphBox}>
-  <View style={Styles.barBox}>
-    <View style={{flex: 1, flexDirection: 'column'}}>
       <View style={{flex: 1, flexDirection: 'row', alignItems: 'stretch'}}>
 
         <View style={{flex: 1, height: 25, alignItems: 'flex-end'}}>
@@ -25,8 +23,6 @@ let bars = noHate.map((x, i) =>
 
       </View>
     </View>
-  </View>
-</View>
 
 )
 

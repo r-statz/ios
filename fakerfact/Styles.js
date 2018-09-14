@@ -24,12 +24,8 @@ const Styles = {
     fontWeight: 'bold',
     paddingLeft: 4
   },
-  // bodyBox : {
-  //   flex: 8,
-  //   flexDirection: 'row',
-  // },
   body : {
-    flex: 9,
+    flex: 8,
     flexDirection: 'column',
     padding: 15
   },
@@ -58,7 +54,8 @@ const Styles = {
   },
   graphBox : {
     height: 30,
-    width: 345
+    // width: 345
+    
   },
   barBox : {
     height: 25,
@@ -95,39 +92,34 @@ const Styles = {
     marginRight: 10
   },
   errorBox : {
-    flex: 10,
+    flex: 8,
     flexDirection: 'column',
     margin: 20
   },
-  // errorOhno : {
-  //   flex: 1,
-  //   fontSize: 18,
-  //   fontWeight: '600',
-  //   marginBottom: 10
-  // },
-  // errorWalt : {
-  //   marginBottom: 10
-  // },
-  // errorUrl : {
-  //   color: 'blue',
-  //   marginBottom: 10
-  // },
-  // errorPinkBox : {
-  //   flex: 10,
-  //   flexDirection: 'column',
-  //   backgroundColor: 'pink',
-  //   borderRadius: 4,
-  //   height: 40,
-  //   paddingTop: 10,
-  //   paddingLeft:10
-  //
-  // },
-  // errorMessage : {
-  //   flex: 1,
-  //   flexDirection: 'row',
-  //   alignItems: 'center'
-  //
-  // },
+  errorOhno : {
+    // flex: 1,
+    fontSize: 18,
+    fontWeight: '600',
+    marginBottom: 10
+  },
+  errorWalt : {
+    marginBottom: 10
+  },
+  errorUrl : {
+    color: 'blue',
+    marginBottom: 10
+  },
+  errorPinkBox : {
+    backgroundColor: 'pink',
+    borderRadius: 4,
+    height: 40,
+    JustifyContent: 'center',
+    paddingTop: 10,
+    paddingLeft:10
+  },
+  errorMessage : {
+    fontSize: 12
+  },
   footer : {
     flex: .75,
     flexDirection: 'row',
