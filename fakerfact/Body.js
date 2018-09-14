@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+
 import {Text, TextInput, View, Linking, ScrollView} from 'react-native'
 import Button from 'react-native-button'
 import Styles from './Styles'

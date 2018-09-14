@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/DevSupport/RCTPackagerConnection.mm \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTBundleURLProvider.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/../Libraries/WebSocket/RCTReconnectingWebSocket.h \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/../Libraries/WebSocket/RCTSRWebSocket.h

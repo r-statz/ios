@@ -4,9 +4,9 @@ import Styles from './Styles'
 import Footer from './Footer'
 import Header from './Header'
 import Body from './Body'
+
 import Error from './Error'
 import Spinner from './Spinner'
-
 
 console.disableYellowBox = true;
 
@@ -20,7 +20,7 @@ export default class App extends Component {
     spinner: false
   }
 
-  componentDidMount = async () => {
+  componentDidMount = async() => {
     const response = await fetch('https://api.fakerfact.org/api')
     const json = await response.json()
     this.setState({apiUrl: json._links.predictions.href})
@@ -94,7 +94,6 @@ export default class App extends Component {
         />
 
         {pageView}
-
         <Footer />
       </View>
     )

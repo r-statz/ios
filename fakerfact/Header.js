@@ -5,6 +5,7 @@ import Styles from './Styles'
 const Header = (props) => {
 
   return(
+
       <View style={Styles.header}>
         <TouchableOpacity
           onPress={props.logoButton}>
