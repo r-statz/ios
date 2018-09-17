@@ -40,7 +40,6 @@ const Styles = {
     borderRadius: 4,
     borderWidth: 1,
     margin: 10,
-    color: '#a7a7a7',
     paddingLeft: 10
   },
   checkBox : {
@@ -58,9 +57,7 @@ const Styles = {
     alignItems: 'center'
   },
   graphBox : {
-    height: 30,
-    // width: 345
-
+    height: 30
   },
   barBox : {
     height: 25,
@@ -102,7 +99,6 @@ const Styles = {
     margin: 20
   },
   errorOhno : {
-    // flex: 1,
     fontSize: 18,
     fontWeight: '600',
     marginBottom: 10

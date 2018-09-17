@@ -15,19 +15,18 @@ export default class Body extends Component {
           <View>
             <View style={ Styles.checkingUrl }>
               <Text style={ Styles.checkingUrlText }>Checking URL:</Text>
-              <Text style={{color: 'blue'}}
-                onPress={() => Linking.openURL(linkingUrl)}>
-              { linkingUrl }
-              </Text>
+                <Text style={{color: 'blue'}}
+                  onPress={() => Linking.openURL(linkingUrl)}>
+                  { linkingUrl }
+                </Text>
+                </View>
+              <View >
+                <Text style={ Styles.waltSays }>{ walt }</Text>
               </View>
-            <View >
-              <Text style={ Styles.waltSays }>{ walt }</Text>
-            </View>
             <View>
               { predictions ? <Graph predictions={ predictions } /> : null  }
-              </View>
-          </View> :
-         <View></View>
+            </View>
+          </View> : <View></View>
 
   return (
 
