@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.cpp \
-  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.h
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.cpp \
+  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.h

@@ -4,9 +4,45 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon20x20@2x.png</key>
+		<data>
+		Lw6aoY5nDDjpBWe5/c58hhTlw4U=
+		</data>
+		<key>AppIcon20x20@3x.png</key>
+		<data>
+		pW9sDEkHDbcC56QbX2SQJre4L5U=
+		</data>
+		<key>AppIcon29x29@2x.png</key>
+		<data>
+		D5Z/E1MxBxjxsrqJudzHLPzVSbU=
+		</data>
+		<key>AppIcon29x29@3x.png</key>
+		<data>
+		GSL3V5FnOMPHNs8C28uP1c2BbNk=
+		</data>
+		<key>AppIcon40x40@2x.png</key>
+		<data>
+		ugnbtF8rXVk9dt021MJzjrQq+7c=
+		</data>
+		<key>AppIcon40x40@3x.png</key>
+		<data>
+		cStJC3fRs5TvRJQNMLjiZ4Qu9BM=
+		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		cStJC3fRs5TvRJQNMLjiZ4Qu9BM=
+		</data>
+		<key>AppIcon60x60@3x.png</key>
+		<data>
+		K0Ynb18GDXuoRdelbVOGaQOKoTs=
+		</data>
+		<key>Assets.car</key>
+		<data>
+		YIHYrgnOFzX9bdx6fpWmOJejtCQ=
+		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		3CCvp/PsD/DEzg4dtnncl4n0tng=
+		R2dVl6m1ASN6wFglXZ8f3h7SFLA=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
@@ -51,7 +87,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rwczEfA8kJZ2ynsU9GRHHIZO+NI=
+		RSamtbir+lRn5YrpVU8LCiKEMpQ=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -63,7 +99,7 @@
 		</data>
 		<key>PlugIns/fakerfactTests.xctest.dSYM/Contents/Resources/DWARF/fakerfactTests</key>
 		<data>
-		W8V2otPS3B4XtZlfvE+V7ACIUtU=
+		o/7swfhOyS7aEIBP5X7RJHbbhbk=
 		</data>
 		<key>PlugIns/fakerfactTests.xctest/Info.plist</key>
 		<data>
@@ -75,20 +111,119 @@
 		</data>
 		<key>PlugIns/fakerfactTests.xctest/fakerfactTests</key>
 		<data>
-		pT2weOfaKMPR4Ef/NegpPgGSGgU=
+		y7asY6r4tQU99XA3WJ3R9MbiD0M=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon20x20@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Lw6aoY5nDDjpBWe5/c58hhTlw4U=
+			</data>
+			<key>hash2</key>
+			<data>
+			V/ES2Ogu3km6ytza3qeT8Kcu88sWhIalgYcJxKfZ1Fs=
+			</data>
+		</dict>
+		<key>AppIcon20x20@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pW9sDEkHDbcC56QbX2SQJre4L5U=
+			</data>
+			<key>hash2</key>
+			<data>
+			x2sCYG/YlAIun5gc5YrvRmCQjZGWJSqYUcoU0OB+Xq4=
+			</data>
+		</dict>
+		<key>AppIcon29x29@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D5Z/E1MxBxjxsrqJudzHLPzVSbU=
+			</data>
+			<key>hash2</key>
+			<data>
+			1CV2p73CA34gjTWDIB12s0OB6t3YQB/HbBNMiBES8PY=
+			</data>
+		</dict>
+		<key>AppIcon29x29@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GSL3V5FnOMPHNs8C28uP1c2BbNk=
+			</data>
+			<key>hash2</key>
+			<data>
+			ygALJt7bB3D/0Rml2FsL+21qV+UjJmrcQkGXk1QNCsk=
+			</data>
+		</dict>
+		<key>AppIcon40x40@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ugnbtF8rXVk9dt021MJzjrQq+7c=
+			</data>
+			<key>hash2</key>
+			<data>
+			NFtfz8vDj7c0Kz82q+FVN/OqMdofF+/c5Oa5Z1qKqP8=
+			</data>
+		</dict>
+		<key>AppIcon40x40@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cStJC3fRs5TvRJQNMLjiZ4Qu9BM=
+			</data>
+			<key>hash2</key>
+			<data>
+			8wn6mBukvIF2qEmWEpfYBX0Kmv1yOXLJGjRBc9CZLZw=
+			</data>
+		</dict>
+		<key>AppIcon60x60@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cStJC3fRs5TvRJQNMLjiZ4Qu9BM=
+			</data>
+			<key>hash2</key>
+			<data>
+			8wn6mBukvIF2qEmWEpfYBX0Kmv1yOXLJGjRBc9CZLZw=
+			</data>
+		</dict>
+		<key>AppIcon60x60@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K0Ynb18GDXuoRdelbVOGaQOKoTs=
+			</data>
+			<key>hash2</key>
+			<data>
+			Mv6bK5k1CZiydMKMKxejsRxLgsnkSjpihvsO88wqy9Y=
+			</data>
+		</dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YIHYrgnOFzX9bdx6fpWmOJejtCQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			8enWGekBYoBfGqFJMVCvbATRUnt4cHchd5oTZwoA834=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3CCvp/PsD/DEzg4dtnncl4n0tng=
+			R2dVl6m1ASN6wFglXZ8f3h7SFLA=
 			</data>
 			<key>hash2</key>
 			<data>
-			KL165esAGQ6v4b2+0hyo8UsDj6xBxxDmsX1Epz0VX1A=
+			LUYLuG9Dl/g+nzXh5iTuUIYaCuGj1WsTE0IxOL96UvM=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
@@ -207,11 +342,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W8V2otPS3B4XtZlfvE+V7ACIUtU=
+			o/7swfhOyS7aEIBP5X7RJHbbhbk=
 			</data>
 			<key>hash2</key>
 			<data>
-			o8qsYYDRl3W0tCErgyItfXu05L2KruUnw/yy1hoTU/I=
+			wlhdOIzl0TZZsdEZyjt7eDFCA5nKGTxGPsolryPh8tA=
 			</data>
 		</dict>
 		<key>PlugIns/fakerfactTests.xctest/Info.plist</key>
@@ -240,11 +375,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pT2weOfaKMPR4Ef/NegpPgGSGgU=
+			y7asY6r4tQU99XA3WJ3R9MbiD0M=
 			</data>
 			<key>hash2</key>
 			<data>
-			+NrpIJw90umKAHuHAc2iEwnFwRIlnrrNKBKRjlGjYg0=
+			EqhY3PY8G25BF0Kv0uqxHqa/J2Iy6cyMTcGIHTCcWK4=
 			</data>
 		</dict>
 	</dict>
