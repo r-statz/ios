@@ -92,9 +92,7 @@ export default class App extends Component {
           logoButton = {this.logoButton}
           toggle={this.state.toggle}
         />
-
         {pageView}
-
         <Footer />
       </View>
     )
