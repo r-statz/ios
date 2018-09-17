@@ -1,11 +1,11 @@
 dependencies: \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/third-party/glog-0.3.4/src/symbolize.cc \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/utilities.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/mutex.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/third-party/glog-0.3.4/src/config.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/config.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/logging.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/log_severity.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/vlog_is_on.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/symbolize.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/demangle.h
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/third-party/glog-0.3.4/src/symbolize.cc \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/utilities.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/mutex.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/third-party/glog-0.3.4/src/config.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/config.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/logging.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/log_severity.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/vlog_is_on.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/symbolize.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/../third-party/glog-0.3.4/src/demangle.h

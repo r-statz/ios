@@ -5,6 +5,9 @@ import Footer from './Footer'
 import Header from './Header'
 import Body from './Body'
 
+import Error from './Error'
+import Spinner from './Spinner'
+
 console.disableYellowBox = true;
 
 export default class App extends Component {
@@ -12,7 +15,9 @@ export default class App extends Component {
     inputUrl: '',
     apiUrl: '',
     results: {},
-    toggle: false
+    toggle: false,
+    placeHolder: 'Enter a URL',
+    spinner: false
   }
 
   componentDidMount = async() => {
@@ -22,42 +27,72 @@ export default class App extends Component {
   }
 
   async postUrl(url) {
-    // console.log(this.state.newsUrl, 'url')
     const response = await fetch(this.state.apiUrl, {
       method: 'POST',
-      body: JSON.stringify({ 'url': url}),
+      body: JSON.stringify({'url': url}),
       headers: {
         'Cache-Control': 'no-cache',
         'Content-Type': 'application/json'
-        }
+      }
     })
     const json = await response.json()
-    this.setState({results: json})
-  }
+    this.setState({results: json,
+                  spinner: false
+    })
+}
 
   logoButton = () => {
-    // console.log('logo clicked')
     this.setState({toggle: false})
   }
 
-  checkUrl = (url) => {
-    this.postUrl(url)
-    this.state.toggle = true
+  inputText = (e) => {
+    this.setState({inputUrl:  e})
   }
 
+  checkUrl = () => {
+    this.postUrl(this.state.inputUrl)
+    this.setState({toggle: true,
+                  placeHolder: 'Enter another URL',
+                  inputUrl: '',
+                  spinner: true
+                })
+  }
+
+
   render() {
+    let pageView
+    if(this.state.spinner) {
+     pageView = <Spinner />
+   } else {
+     pageView = this.state.results.errors && this.state.toggle ?
+      <View style={Styles.errorBox}>
+        <Error  error={this.state.results}/>
+    </View>
+       :
+    <Body
+      postUrl={this.postUrl}
+      checkUrl={this.checkUrl}
+      walt={ this.state.results.walt_says}
+      linkingUrl = {this.state.results.url}
+      predictions={this.state.results.predictions}
+      toggle={this.state.toggle}
+      placeHolder={this.state.placeHolder}
+      inputText={this.inputText}
+      inputUrl={this.state.inputUrl}
+      spinner={this.state.spinner}
+    />
+    }
+
+
     return (
+
       <View style={Styles.container}>
         <Header
+          state = {this.state.results}
           logoButton = {this.logoButton}
           toggle={this.state.toggle}
         />
-        <Body postUrl={this.postUrl} checkUrl={this.checkUrl}
-        walt={ this.state.results.walt_says}
-        linkingUrl = {this.state.results.url}
-        predictions={this.state.results.predictions}
-        toggle={this.state.toggle}
-        />
+        {pageView}
         <Footer />
       </View>
     )

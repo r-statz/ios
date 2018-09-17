@@ -1,10 +1,10 @@
 dependencies: \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Modules/RCTSourceCode.m \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Modules/RCTSourceCode.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTBridgeModule.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTBridge.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTFrameUpdate.h \
-  /Users/robin/g89/projects/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTInvalidating.h
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/Modules/RCTSourceCode.m \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/Modules/RCTSourceCode.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/tymondragon/workspace/g89/q4/capstone/ios/fakerfact/node_modules/react-native/React/Base/RCTInvalidating.h
